@@ -4,8 +4,8 @@
 
 /* Variables */
 :root {
-    --bg-color: white;
-    --fg-color: black;
+    --bg-color: #13093c;
+    --fg-color: rgb(235, 235, 235);
 }
 
 body {
@@ -16,8 +16,7 @@ body {
 
 span {
     background: #7258E2;
-    background: linear-gradient(to right, #7258E2 0%, #3597FF 50%, #40DEC7 100%);
-    -webkit-background-clip: text;
+    background: linear-gradient(90deg, rgba(193,0,128,1) 0%, rgba(212,4,255,1) 33%, rgba(139,0,231,1) 67%, rgb(79, 55, 144) 100%);    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Pacifico', cursive;
     text-align: center;
@@ -65,7 +64,7 @@ h1 {
 
 p {
     font-size: 1.5em;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 a {
