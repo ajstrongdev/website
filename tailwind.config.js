@@ -1,17 +1,22 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: ["./*.{php,html,js}"],
   theme: {
     extend: {
       colors: {
-        'dracula-dark': '#6f2b40',
-        'container-dark': '#18090E',
+        'aj-background': '#171012',
         'dracula-pink': '#FF79C6',
-        'dracula-green': '#8d7be4',
+        'off-white': '#c7c1c1',
       },
       backgroundImage: {
         
-      }
+      },
+      fontFamily: {
+        outfit: ['"Outfit"', ...defaultTheme.fontFamily.sans]
+      },
     },
   },
   plugins: [],
