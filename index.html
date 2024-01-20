@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="dist/output.css">
+    <script src="assets/js/validation.js"></script>
 </head>
 <body>
         <!-- Hero banner -->
@@ -135,18 +136,21 @@
                 Contact me
             </h1>
 
-            <div class="form-container lg:w-[65%] m-auto text-center">
+            <div class="form-container lg:w-[65%] w-[90%] hidden lg:block m-auto P-8 text-center">
                 <form action="mailto:ajstrong.dev@gmail.com" method="post" name="contactForm" enctype="text/plain" onsubmit="return validateForm()">
-                    <label class="font-medium text-3xl text-dracula-pink p-16">Name: <input class="text-off-white mt-8 bg-form rounded-md" type="text" name="Name"></label> <br>
-                    <label class="font-medium text-3xl text-dracula-pink p-16 mt-8">Email: <input class="text-off-white mt-8 bg-form rounded-md" type="text" name="Email"></label> <br>
+                    <label class="font-medium text-3xl text-dracula-pink lg:p-16">Name: <input class="text-off-white mt-8 bg-form rounded-md" type="text" name="Name"></label> <br>
+                    <label class="font-medium text-3xl text-dracula-pink lg:p-16 mt-8">Email: <input class="text-off-white mt-8 bg-form rounded-md" type="text" name="Email"></label> <br>
                     <input class="bottom-0 bg-dracula-pink rounded-xl text-black pl-4 pr-4 p-2 shadow-2xl mt-4" type="submit" name="submit" value="Submit">
                 </form>
             </div>
+            <p class="text-2xl lg:text-3xl text-off-white font-medium text-center mt-4">
+                Email: ajstrong.dev@gmail.com
+            </p>
         </div>
 
 
         <!-- Footer -->
-        <div class="lg:w-[90%] m-auto footer mt-8 p-4 border-t-4 border-dracula-pink">
+        <div class="w-[90%] m-auto footer mt-8 p-8 mb-8 border-t-4 border-dracula-pink">
             <p class="text-center text-2xl text-off-white">
                 Made with ❤️ by AJStrong
             </p>
